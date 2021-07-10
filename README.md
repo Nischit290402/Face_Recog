@@ -1,6 +1,8 @@
 # Face_Recog
-The .py file uploaded here has been run on jupyter notebook.
+The code is in the .py file and has been run on jupyter notebook as shown in Test_Video.
+
 A folder containing known faces to be trained is also uploaded.
+
 A test video of the face_recognition is also uploaded.
 
 Since this is a prototype and our team had to somehow complete before deadline, we have used a rather unsophisticated method of face recognition.
