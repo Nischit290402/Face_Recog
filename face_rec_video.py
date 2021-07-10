@@ -1,18 +1,18 @@
 import face_recognition
 import os
 import cv2
+import sys
 
 KNOWN_FACES_DIR = "known_faces"
-#UNKNOWN_FACES_DIR = "unknown_faces"
-UNKNOWN_VIDEO_DIR = "unknown_vid"
+
 TOLERANCE = 0.6
 FRAME_THICKNESS = 3
 FONT_THICKNESS = 2
 MODEL = "cnn"
 
-video = cv2.VideoCapture(UNKNOWN_VIDEO_DIR) #could put in a filename
+video = cv2.VideoCapture(0) 
 
-print("loading known faces")
+print("Loading known faces")
 
 known_faces = []
 known_names = []
@@ -25,16 +25,13 @@ for name in os.listdir(KNOWN_FACES_DIR):
 		known_faces.append(encoding)
 		known_names.append(name)
 
-print("processing unkown faces")
+print("Processing unkown faces...It may take some time.")
 while True:
-	#print(filename)
-	
-	#image = face_recognition.load_image_file(f"{UNKNOWN_FACES_DIR}/{filename}")
+
 	ret, image = video.read()
-	image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+
 	locations = face_recognition.face_locations(image, model=MODEL)
 	encodings = face_recognition.face_encodings(image, locations)
-	
 
 	for face_encoding, face_location in zip(encodings, locations):
 		results = face_recognition.compare_faces(known_faces, face_encoding, TOLERANCE)
@@ -46,7 +43,7 @@ while True:
 			top_left = (face_location[3], face_location[0])
 			bottom_right =(face_location[1], face_location[2])
 
-			color = [0,255,0]
+			color = [0,150,0]
 
 			cv2.rectangle(image, top_left, bottom_right, color, FRAME_THICKNESS)
 
@@ -57,6 +54,4 @@ while True:
 	cv2.imshow(filename, image)
 	if cv2.waitKey(1) & 0xFF ==ord("q"):
 		break
-	#cv2.waitKey(10000)
-	#cv2.destroyWindow(filename)
-
+	
