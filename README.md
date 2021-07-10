@@ -16,7 +16,7 @@ The basic methodology is still quite the same:
   
 We will definitely try our very best to implement our mentor's approach after the mid-evaluation.
   
-I will attach a video of the working face recognition, however due to lack of actual webcam there is delay in transmission as I use my phone as a replacement for the webcam. 
+In the video(Test_video) of the working face recognition, due to lack of actual webcam there is delay in transmission as I use my phone as a replacement for the webcam. 
 
-Due to personal reasons(Travelling) RamaKrishna wasn't acvtively participating.
+Due to personal reasons(Travelling) RamaKrishna wasn't actively participating.
 Thank You.
