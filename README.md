@@ -1,5 +1,5 @@
 # Face_Recog
-
+The .py file uploaded here has been run on jupyter notebook.
 Since this is a prototype and our team had to somehow complete before deadline, we have used a rather unsophisticated method of face recognition.
 We still were not able to use the .h5 file and so couldn't go along the approach suggested by our mentors i.e. to use the YOLO and Siamese Network from keras/tensorflow.
 We have currently implemented face recognition using a library named 'face_recognition' and 'OpenCV'
