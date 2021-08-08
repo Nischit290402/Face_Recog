@@ -28,3 +28,8 @@ In the video(Test_video) of the working face recognition, due to lack of actual 
 
 Due to personal reasons(Travelling) RamaKrishna wasn't actively participating.
 Thank You.
+
+NEW(8th Aug):
+The slow video is fixed in the deployed version under the FaceRecog directory.
+
+Please let us know if anything more can be done.
