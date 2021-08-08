@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+Register Page
+{% end block %}
+
+{% block content %}
+
+    <div class="container">
+        <form method="POST" class=""form-register" style="color:white">
+            {{ form.hidden_tag() }}
+            <img class="mb-4" src="https://res.cloudinary.com/jimshapedcoding/image/upload/v1597332609/android-icon-192x192_ove2a7.png" alt="">
+                <h1 class="h3 mb-3 font-weight-normal">
+                    Please Create your Account
+                </h1>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder = "Enter Here") }}
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder = "Enter Here") }}
+
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control", placeholder = "Enter Here") }}
+
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control", placeholder = "Enter Here") }}
+            <br>
+            {{ form.Submit(class= "btn btn-lg btn-block btn-primary") }}
+
+        </form>
+    </div>
+{% end block %}

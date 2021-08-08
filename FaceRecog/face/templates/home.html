@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+{% block content %}
+    <body class="text-center">
+    <div class="container">
+                <h1 class="h3 mb-3 font-weight-normal">
+                    Welcome
+                </h1>
+            <div class="checkbox mb-3">
+                {% if current_user.is_authenticated %}
+                <h6>upload images</h6>
+                <a class="btn btn-sm btn-secondary" href="{{ url_for('upload_file') }}">Upload</a>
+                {% endif %}
+            </div>
+    </div>
+
+</body>
+
+{% endblock %}

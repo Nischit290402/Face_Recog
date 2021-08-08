@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+Upload Page
+{% endblock %}
+
+{% block content %}
+<title>Upload Image</title>
+<body>
+<h1>Upload Page</h1>
+    <div class="container" style="color:white">
+        <form method=post enctype=multipart/form-data style="color:white">
+            <h2>Enter Your Name</h2>
+            <input type=text name=name >
+            <br>
+            <h2>Insert Image</h2>
+            <input type=file name=file class="form-holder" placeholder="jpeg image only">
+            <br>
+            <p> </p>
+            <input type=submit value=Upload class="btn-primary">
+    </form>
+
+    </div>
+</body>
+{% endblock %}
+
+
+
