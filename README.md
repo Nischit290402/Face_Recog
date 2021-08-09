@@ -10,17 +10,17 @@ A test video of the face_recognition is also uploaded.
 
 We have currently implemented face recognition using a library named 'face_recognition' and 'OpenCV'
 
-The basic methodology is still quite the same as compared to the standard FaceNet and YOLO application put together:
+  The basic methodology is still quite the same as compared to the standard FaceNet and YOLO application put together:
 
-  1)Get a database of known images and train the model using functions in 'face_recognition'.
+    1)Get a database of known images and train the model using functions in 'face_recognition'.
 
-  2)Take input of a live video feed(requires webcam).
+    2)Take input of a live video feed(requires webcam).
   
-  3)Implement 'cnn' model to extract features from bounding box.
+    3)Implement 'cnn' model to extract features from bounding box.
   
-  4)Compare the features extracted using functions in 'face_recognition' with a certain tolerance level for %match.
+    4)Compare the features extracted using functions in 'face_recognition' with a certain tolerance level for %match.
   
-  5)Display the matched name if tolerance is passed.
+    5)Display the matched name if tolerance is passed.
   
 The Frontend program:
   
@@ -30,11 +30,11 @@ The Frontend program:
   
     The structuring of the frontend into html and python files has been accomplished using a library of FLASK called JENGO.
   
-  While debugging for user-friendly purposes, another library called WERKZEUG
+    While debugging for user-friendly purposes, another library called WERKZEUG
   
-  A database called face.db is made in order to store user info. However, the images uploaded is not stored here for the purpose of easy access by the OpenCV.
+    A database called face.db is made in order to store user info. However, the images uploaded is not stored here for the purpose of easy access by the OpenCV.
   
-  A different folder called Faces replaces the known_faces during deployment of code.
+    A different folder called Faces replaces the known_faces during deployment of code.
   
   
   
