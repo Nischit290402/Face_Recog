@@ -2,7 +2,7 @@
 
 The Backend program :
 
-The face_rec_vid.py file and has been run on jupyter notebook as shown in Test_Video.
+The face_rec_video.py file and has been run on jupyter notebook as shown in Test_Video.
 
 A folder containing known faces to be trained is also uploaded.
 
