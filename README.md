@@ -22,13 +22,13 @@ The basic methodology is still quite the same as compared to the standard FaceNe
   
   5)Display the matched name if tolerance is passed.
   
-The Frontend program
+The Frontend program:
   
-  The frontend program is purely an implementation of FLASK using python and html. 
+    The frontend program is purely an implementation of FLASK using python and html. 
   
-  To support the styles we have used BOOTSTRAP, CSS
+    To support the styles we have used BOOTSTRAP, CSS
   
-  The structuring of the frontend into html and python files has been accomplished using a library of FLASK called JENGO.
+    The structuring of the frontend into html and python files has been accomplished using a library of FLASK called JENGO.
   
   While debugging for user-friendly purposes, another library called WERKZEUG
   
