@@ -1,16 +1,16 @@
 # Face_Recog
+
+The Backend program :
+
 The code is in the .py file and has been run on jupyter notebook as shown in Test_Video.
 
 A folder containing known faces to be trained is also uploaded.
 
 A test video of the face_recognition is also uploaded.
 
-Since this is a prototype and our team had to somehow complete before deadline, we have used a rather unsophisticated method of face recognition.
-We still were not able to use the .h5 file and so couldn't go along the approach suggested by our mentors i.e. to use the YOLO and Siamese Network from keras/tensorflow.
-
 We have currently implemented face recognition using a library named 'face_recognition' and 'OpenCV'
 
-The basic methodology is still quite the same:
+The basic methodology is still quite the same as compared to the standard FaceNet and YOLO application put together:
 
   1)Get a database of known images and train the model using functions in 'face_recognition'.
 
@@ -22,14 +22,22 @@ The basic methodology is still quite the same:
   
   5)Display the matched name if tolerance is passed.
   
-We will definitely try our very best to implement our mentor's approach after the mid-evaluation.
+The Frontend program
   
-In the video(Test_video) of the working face recognition, due to lack of actual webcam there is delay in transmission as I use my phone as a replacement for the webcam. 
-
-Due to personal reasons(Travelling) RamaKrishna wasn't actively participating.
-Thank You.
-
-NEW(8th Aug):
-The slow video is fixed in the deployed version under the FaceRecog directory.
-
-Please let us know if anything more can be done.
+  The frontend program is purely an implementation of FLASK using python and html. 
+  
+  To support the styles we have used BOOTSTRAP, CSS
+  
+  The structuring of the frontend into html and python files has been accomplished using a library of FLASK called JENGO.
+  
+  While debugging for user-friendly purposes, another library called WERKZEUG
+  
+  A database called face.db is made in order to store user info. However, the images uploaded is not stored here for the purpose of easy access by the OpenCV.
+  
+  A different folder called Faces replaces the known_faces during deployment of code.
+  
+  
+  
+  
+  
+  #Thank You
